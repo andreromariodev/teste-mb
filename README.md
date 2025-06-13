@@ -1,42 +1,41 @@
-# Projeto de Cadastro com Vue.js e MongoDB
+# Teste Mercado Bitcoin
 
-Este projeto consiste em uma aplicação fullstack simples para cadastro de usuários, com frontend em Vue.js e backend em Node.js com Express e MongoDB.
+Este projeto é uma aplicação simples de cadastro de usuários, composta por:
 
----
-
-## Estrutura do projeto
-
-- `/server`  
-  Backend em Node.js usando Express e Mongoose para conexão com MongoDB.
-
-- `/client`  
-  Frontend em Vue.js com Vite como bundler.
+- **Front-end** com Vue 3 (sem TypeScript)
+- **Back-end** com Node.js + Express + MongoDB (Mongoose)
+- Integração entre front e back, com persistência no banco de dados MongoDB
 
 ---
 
-## Pré-requisitos
+## 🗂 Estrutura de pastas
 
-- Node.js (versão 18+ recomendada)
-- MongoDB rodando localmente ou em algum serviço acessível
-- npm ou yarn para instalar dependências
+```
+.
+├── client/     # Front-end Vue 3
+└── server/     # Back-end Express + MongoDB
+```
 
 ---
 
-## Como rodar o projeto
+## 🚀 Como executar
 
-### 1. Rodar o backend (server)
+### Pré-requisitos
+
+- Node.js
+- MongoDB (rodando localmente, porta padrão 27017)
+
+### 1. Iniciar o Back-end
 
 ```bash
 cd server
 npm install
-npm start
+node index.js
 ```
 
-> Certifique-se de que o MongoDB está rodando em `mongodb://localhost:27017`.
+Servidor rodando em: `http://localhost:3000`
 
----
-
-### 2. Rodar o frontend (client)
+### 2. Iniciar o Front-end
 
 ```bash
 cd client
@@ -44,25 +43,38 @@ npm install
 npm run dev
 ```
 
-O frontend estará disponível por padrão em: `http://localhost:5173`
+Aplicação em: `http://localhost:5173`
 
 ---
 
-## Endpoints da API
+## 📋 Endpoints da API
 
-- `POST /registration`  
-  Rota para cadastrar um novo usuário. Espera um JSON com os dados do formulário.
-
----
-
-## Tecnologias usadas
-
-- **Frontend:** Vue.js 3, Vite  
-- **Backend:** Node.js, Express, Mongoose  
-- **Banco de dados:** MongoDB  
+| Método | Rota           | Descrição                    |
+|--------|----------------|------------------------------|
+| POST   | /registration  | Cria um novo usuário         |
+| GET    | /registration  | Lista todos os usuários      |
 
 ---
 
-## Contato
+## 📝 Observações
 
-Para dúvidas ou sugestões, entre em contato.
+- A aplicação usa `fetch` para comunicar com o backend.
+- A listagem de cadastros pode ser vista após um cadastro, através de um botão "Ver Cadastros".
+- Os dados são exibidos do mais recente para o mais antigo.
+
+---
+
+## 📌 Tecnologias
+
+- [Vue 3](https://vuejs.org/)
+- [Vite](https://vitejs.dev/)
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
+
+---
+
+André Romário.
+[http    ](https://andreromariodev.github.io/)
+[http    ](https://www.linkedin.com/in/andre-romario-dev/)
