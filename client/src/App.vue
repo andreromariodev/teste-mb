@@ -89,6 +89,19 @@ async function finish() {
     const data = await response.json()
     alert(data.message)
     fetchUsers()
+    step.value = 1
+    formData.value = {
+      mail: '',
+      typePerson: '',
+      name: '',
+      cpf: '',
+      birth: '',
+      socialReason: '',
+      cnpj: '',
+      openDate: '',
+      phone: '',
+      password: ''
+    }
   } catch (err) {
     console.error(err)
   }
