@@ -76,5 +76,5 @@ Aplicação em: `http://localhost:5173`
 ---
 
 André Romário.
-[http    ](https://andreromariodev.github.io/)
-[http    ](https://www.linkedin.com/in/andre-romario-dev/)
+[Acessar Portfólio    ](https://andreromariodev.github.io/)
+[LinkedIn    ](https://www.linkedin.com/in/andre-romario-dev/)
